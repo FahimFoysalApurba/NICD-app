@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>NICD</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 10%;
+      transform: translate(-50%, 0%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(230, 239, 245);
+    }
+  </style>
+</head>
+
+
+<body class="center">
+
+  <h1 style="color:rgb(44, 44, 90); font-weight: 700;">
+    <i class="fas fa-ship"></i> Network Intrution Catagory Detector
+  </h1>
+
+  <p style="color:rgb(51, 51, 83); font-weight: 700;">
+    The catagory of the attack-
+  </p>
+
+  <form action="result">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dur" required type="text" name="dur">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="proto" required type="text" name="proto">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="service" required type="text" name="service">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="state" required type="text" name="state">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="spkts" type="text" required name="spkts">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dpkts" required type="text" name="dpkts">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="sbytes" required type="text" name="sbytes">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dbytes" required type="text" name="dbytes">
+    </div>
+
+
+    <div class="form-group">
+      <input class="form-control" placeholder="rate" required type="text" name="rate">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="sttl" required type="text" name="sttl">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dttl" required type="text" name="dttl">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="sload" required type="text" name="sload">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="sloss" required type="text" name="sloss">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dloss" required type="text" name="dloss">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="sinpkt" required type="text" name="sinpkt">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="swin" required type="text" name="swin">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="stcpb" required type="text" name="stcpb">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dtcpb" required type="text" name="dtcpb">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dwin" required type="text" name="dwin">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="dmean" required type="text" name="dmean">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_srv_src" required type="text" name="ct_srv_src">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_state_ttl" required type="text" name="ct_state_ttl">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_dst_ltm" required type="text" name="ct_dst_ltm">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_src_dport_ltm" required type="text" name="ct_src_dport_ltm">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_dst_sport_ltm" required type="text" name="ct_dst_sport_ltm">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_dst_src_ltm" required type="text" name="ct_dst_src_ltm">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_src_ltm" required type="text" name="ct_src_ltm">
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" placeholder="ct_srv_dst" required type="text" name="ct_srv_dst">
+    </div>
+
+
+    <input class="btn btn-primary btn-lg btn-block" type="submit" value='Predict'>
+
+  </form>
+</body>
+
+</html>

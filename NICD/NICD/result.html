@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+
+  <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .center {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(230, 239, 245);
+    }
+  </style>
+</head>
+
+<body class="center">
+
+  {% if ans == 0 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Analysis
+
+  {% elif ans == 1 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Backdoor
+
+  {% elif ans == 2 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> DoS
+
+  {% elif ans == 3 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Exploits
+
+  {% elif ans == 4 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Fuzzers
+   
+  {% elif ans == 5 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Generic
+   
+  {% elif ans == 6 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> backdoor
+
+  {% elif ans == 7 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Reconnaissance
+
+  {% elif ans == 8 %}
+  <h1 style=" color: rgb(88, 180, 88); font-weight: 900;">
+  <i class="fas fa-swimmer"></i> Shellcode
+
+
+  {% elif ans == 9 %}
+  <h1 style="color: rgb(212, 85, 85); font-weight: 900;">
+  <i class="fas fa-skull"></i> Worms
+
+  {% else %}
+  <h1 style="color: rgb(31, 15, 15); font-weight: 900;">ERROR</h1>
+  {% endif %}
+
+</body>
+
+</html>
